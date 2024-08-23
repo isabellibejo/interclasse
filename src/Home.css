@@ -180,7 +180,7 @@ td {
 
 .esporte {
   width: 100%;
-  max-width: 420px; /* Adicionado para limitar a largura dos esportes */
+  max-width: 346px; /* Adicionado para limitar a largura dos esportes */
   display: flex;
   align-items: center;
   margin-bottom: 20px;
