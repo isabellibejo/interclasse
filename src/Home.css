@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: black;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  flex-wrap: wrap; /* Adicionado para garantir que o conteúdo quebre em telas menores */
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 22px;
+  flex-wrap: wrap; /* Adicionado para quebrar linha em telas menores */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.logo-space {
+  height: 160px;
+}
+
+.header-link {
+  color: white;
+  margin-left: 80px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+  background-color: #f0f0f0;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.games {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #000000;
+  padding: 16px;
+}
+
+.game-list {
+  width: 100%;
+  max-width: 644px; /* Adicionado para limitar a largura da lista de jogos */
+}
+
+.game-item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 24px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-item h4 {
+  margin: 0;
+}
+
+.game-item p {
+  margin: 5px 0;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Adicionado para garantir que as equipes quebrem em telas menores */
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px; /* Adicionado para limitar a largura das equipes */
+  margin: 10px;
+}
+
+.team img {
+  margin-right: 24px;
+}
+
+.team-flag {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+span {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Quadro de Pontuação */
+.pontuacao {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 800px; /* Adicionado para limitar a largura da tabela */
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.flag {
+  width: 79px;
+  height: 48px;
+}
+
+/* Esportes */
+.esportes {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 800;
+  color: #000000;
+  margin-top: 100px;
+  gap: 24px;
+}
+
+.esporte-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Adicionado para garantir que os esportes quebrem em telas menores */
+  color: #000000;
+  gap: 24px;
+}
+
+.esporte {
+  width: 100%;
+  max-width: 420px; /* Adicionado para limitar a largura dos esportes */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.esporte-row img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.esporte-row p {
+  margin-top: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Adicionado para garantir que o rodapé quebre em telas menores */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  width: 100%;
+  max-width: 300px; /* Adicionado para limitar a largura das informações de contato */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.contact-info ul li {
+  margin-bottom: 16px;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap; /* Adicionado para garantir que o conteúdo do rodapé quebre em telas menores */
+  justify-content: space-around;
+}
+
+.footer-center img {
+  height: auto;
+  width: 100%;
+  max-width: 750px; /* Adicionado para limitar a largura da imagem */
+}
+
+.footer-right img {
+  height: auto;
+  width: 100%;
+  max-width: 208px; /* Adicionado para limitar a largura da imagem */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .header-container {
+    font-size: 20px;
+  }
+
+  .header-link {
+    margin-left: 40px;
+  }
+
+  .game-list {
+    max-width: 100%;
+  }
+
+  .footer-center img {
+    height: 300px;
+    width: auto; /* Ajuste para manter a proporção */
+  }
+
+  .footer-right img {
+    height: 50px;
+    width: auto; /* Ajuste para manter a proporção */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-container {
+    font-size: 18px;
+  }
+
+  .header-link {
+    margin-left: 20px;
+  }
+
+  .game-item {
+    padding: 16px;
+  }
+
+  .final-message {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .footer-center img {
+    height: 200px;
+    width: auto; /* Ajuste para manter a proporção */
+  }
+
+  .footer-right img {
+    height: 50px;
+    width: auto; /* Ajuste para manter a proporção */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .header-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  .games {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-list {
+    width: 100%;
+  }
+
+  .team {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .esporte {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
